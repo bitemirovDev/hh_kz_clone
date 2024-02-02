@@ -1,0 +1,12 @@
+@import url("./style/base.css");
+@import url("./style/mods.css");
+@import url("./style/components/header.css");
+@import url("./style//components/login.css");
+@import url("./style/input.css");
+@import url("./style/button.css");
+@import url("./style/typography.css");
+@import url("./style/card.css");
+@import url("./style/components/myResume.css");
+@import url("./style/components/contactDetails.css");
+@import url("./style/components/fieldset.css");
+@import url("./style/components/autoCompleteSelect.css");

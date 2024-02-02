@@ -8,14 +8,12 @@ import axios from "axios";
 
 export default function CreateResume() {
   const [cities, setCities] = useState([]);
+
   useEffect(() => {
     axios.get(`${END_POINT}/api/region/cities`).then((res) => {
       setCities(res.data);
     });
-    console.log("didMount");
   }, []);
-
-  console.log("rerender");
 
   return (
     <main>

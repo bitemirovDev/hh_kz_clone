@@ -1,13 +1,8 @@
-export default function Fieldset({ size, label, placeholder, type, onChange }) {
+export default function Fieldset({ label, size, ...props }) {
   return (
     <fieldset className={"fieldset " + size}>
       <label>{label}</label>
-      <input
-        className="input"
-        placeholder={placeholder}
-        type={type}
-        onChange={onChange}
-      ></input>
+      <input className="input" {...props}></input>
     </fieldset>
   );
 }

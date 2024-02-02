@@ -12,6 +12,9 @@
   border: 1px solid #b4adad;
   border-radius: 5px;
   padding: 10px;
+
+  /* z-index: 100; */
+  background-color: #fff;
 }
 
 .auto_complete_select {
@@ -21,10 +24,11 @@
 .dropdown a {
   padding: 5px;
   border: 1px solid #b4adad;
+  border-radius: 4px;
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 
@@ -39,14 +43,33 @@
   width: max-content;
   background-color: #f5ebeb;
   border-radius: 5px;
+
+  position: absolute;
+  right: 0;
+  top: 100%;
 }
 
-.tag i {
-  width: 20px;
-  height: 20px;
-}
-
-.tag i img {
+.reset_btn img {
   width: 100%;
   height: 100%;
+}
+
+.reset_btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  position: absolute;
+  top: 18px;
+  right: 8px;
+
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.reset_btn:hover {
+  opacity: 1;
 }

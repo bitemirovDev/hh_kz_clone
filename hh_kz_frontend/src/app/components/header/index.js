@@ -24,7 +24,7 @@ export default function Header() {
               Поиск
             </button>
             <button className="button_green header_button">
-              <Link href="">Создать резюме</Link>
+              <Link href="/create-resume">Создать резюме</Link>
             </button>
             <button className="header_button">
               <Link href="/login">Войти</Link>

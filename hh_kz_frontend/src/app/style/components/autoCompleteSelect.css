@@ -4,16 +4,12 @@
   right: 0;
   width: 100%;
   max-width: 65%;
-
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-
   border: 1px solid #b4adad;
   border-radius: 5px;
   padding: 10px;
-
-  /* z-index: 100; */
   background-color: #fff;
 }
 
@@ -28,25 +24,11 @@
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
-  /* width: 100%; */
   text-align: center;
 }
 
 .dropdown a:hover {
   opacity: 1;
-}
-
-.tag {
-  padding: 10px;
-  display: flex;
-  gap: 5px;
-  width: max-content;
-  background-color: #f5ebeb;
-  border-radius: 5px;
-
-  position: absolute;
-  right: 0;
-  top: 100%;
 }
 
 .reset_btn img {
@@ -61,11 +43,9 @@
   border: none;
   outline: none;
   background: transparent;
-
   position: absolute;
   top: 18px;
   right: 8px;
-
   opacity: 0.8;
   transition: 0.3s;
 }

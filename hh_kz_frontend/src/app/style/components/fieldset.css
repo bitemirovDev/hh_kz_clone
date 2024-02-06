@@ -7,7 +7,7 @@
 }
 
 .fieldset label {
-  width: 300px;
+  width: 240px;
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -15,7 +15,7 @@
 
 .fieldset-sm {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .fieldset-md {
@@ -26,4 +26,8 @@
 .fieldset-lg {
   width: 100%;
   max-width: 700px;
+}
+
+.fieldset-sm label {
+  width: 240px;
 }

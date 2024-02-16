@@ -15,17 +15,29 @@ export default function DateSelect({ label, size, ...props }) {
     "Ноябрь",
     "Декабрь",
   ];
+
+  const onChangeYear = () => {};
+  const onChangeMonth = () => {};
+  const onChangeDay = () => {};
   return (
     <fieldset className={"fieldset " + size}>
       <label>{label}</label>
       <div className={classes.inputs_container}>
-        <input className={classes.input} placeholder="День"></input>
-        <select className={classes.input}>
+        <input
+          className={classes.input}
+          placeholder="День"
+          onChange={onChangeDay}
+        ></input>
+        <select className={classes.input} onChange={onChangeMonth}>
           {months.map((month) => (
             <option key={month}>{month}</option>
           ))}
         </select>
-        <input className={classes.input} placeholder="Год"></input>
+        <input
+          className={classes.input}
+          placeholder="Год"
+          onChange={onChangeYear}
+        ></input>
       </div>
     </fieldset>
   );

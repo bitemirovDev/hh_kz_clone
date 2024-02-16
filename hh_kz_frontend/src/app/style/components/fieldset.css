@@ -3,11 +3,11 @@
   border: none;
   outline: none;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .fieldset label {
-  width: 240px;
+  min-width: 240px;
   display: flex;
   align-items: center;
   font-size: 14px;

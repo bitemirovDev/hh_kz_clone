@@ -6,7 +6,7 @@ export default function Speciality() {
     <div className="create_resume_block">
       <h3>Специальность</h3>
       <div>
-        <Fieldset label="Желаемая должность" size="fieldset-lg" />
+        <Fieldset type="text" label="Желаемая должность" size="fieldset-lg" />
         <InputWithSelect size="fieldset-sm" label="Зарплата" />
       </div>
     </div>

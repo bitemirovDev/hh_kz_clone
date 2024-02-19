@@ -13,6 +13,11 @@
   font-size: 14px;
 }
 
+.fieldset-vsm {
+  width: 100%;
+  max-width: 350px;
+}
+
 .fieldset-sm {
   width: 100%;
   max-width: 500px;

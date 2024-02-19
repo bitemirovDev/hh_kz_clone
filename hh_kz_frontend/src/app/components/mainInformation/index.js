@@ -35,6 +35,7 @@ export default function MainInfromation() {
           classForLabel={classes.label}
         />
         <AutoCompleteSelectCountries
+          type="text"
           countries={countries}
           onSelect={onSelect}
           size="fieldset-md"

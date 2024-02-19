@@ -1,11 +1,15 @@
 import ModalAddWorkExp from "../modalAddWorkExp";
 import WorkingHistoryCard from "../workingHistoryCard";
+import AutoCompleteSelectSkills from "../autoCompleteSelectSkills";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { END_POINT } from "@/config/end-point";
 
 export default function WorkExperience() {
   const [modal, setModal] = useState(false);
   const [working_histories, setWorking_histories] = useState([]);
+  const [skills, setSkills] = useState([]);
 
   const openModal = () => {
     setModal(true);
@@ -23,6 +27,16 @@ export default function WorkExperience() {
     let index = whs.indexOf(item);
     whs.splice(index, 1);
     setWorking_histories(whs);
+  };
+
+  useEffect(() => {
+    axios.get(`${END_POINT}/api/skills`).then((res) => {
+      setSkills(res.data);
+    });
+  }, []);
+
+  const onSelectSkills = (data) => {
+    console.log("onSelect", data);
   };
 
   return (
@@ -71,6 +85,15 @@ export default function WorkExperience() {
           placeholder="Расскажите о своих качествах, знаниях, увлечениях, которые, как вам кажется, будут полезны работодателю"
         ></textarea>
       </fieldset>
+
+      <AutoCompleteSelectSkills
+        type="text"
+        label="Ключевые навыки"
+        size="fieldset-lg"
+        onSelect={onSelectSkills}
+        skills={skills}
+        placeholder="Навык, например, JavaScript"
+      />
     </div>
   );
 }

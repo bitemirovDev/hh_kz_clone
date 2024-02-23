@@ -6,6 +6,8 @@ import MainInfromation from "../components/mainInformation";
 import Speciality from "../components/speciality";
 import WorkExperience from "../components/workExperience";
 import Education from "../components/education";
+import LanguageSkills from "../components/languageSkills";
+import EmploymentTypes from "../components/employmentTypes";
 
 export default function CreateResume() {
   return (
@@ -18,6 +20,14 @@ export default function CreateResume() {
         <Speciality />
         <WorkExperience />
         <Education />
+        <LanguageSkills />
+        <EmploymentTypes />
+
+        <div className="fieldset-lg" style={{ textAlign: "end" }}>
+          <button className="button button-primary">
+            Сохранить и опубликовать
+          </button>
+        </div>
       </div>
     </main>
   );

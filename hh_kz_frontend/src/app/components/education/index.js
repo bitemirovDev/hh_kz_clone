@@ -64,6 +64,7 @@ export default function Education() {
         onChange={onChangeData}
         value={item.level}
         name={index + "-level"}
+        index={index}
       />
       <Fieldset
         type="text"
